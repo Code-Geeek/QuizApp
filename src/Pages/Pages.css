@@ -1,0 +1,12 @@
+.question-1{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px 100px;
+    background-color: #30c0e2;
+}
+.question-2{
+    height: 300px;
+    width: 300px;
+    border-radius: 100px 10px;
+    background-color: #30c0e2;
+}
