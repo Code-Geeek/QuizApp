@@ -9,10 +9,11 @@ function Home() {
     <>
     <div className="background-image d-flex justify-content-between align-items-center">
         <Row >
-            <div className='col-4 ms-5' style={{height:'250px'}}>
+            <div className='col-4 ms-5' style={{height:'350px',width:'500px'}}>
                 <h2 style={{height:'50px'}}>Quiz.it</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum veniam maiores quibusdam harum beatae commodi consequatur aut incidunt ab laborum! Ut reprehenderit facere itaque optio ex nulla quo ea.</p>
-                <Link to={"/questions"}><button className='btn btn-success'>Lets Start !</button></Link>
+                <p><span className='fs-bold text-primary'>Quiz.it</span>Exercise your brain with these basic quizzes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti porro blanditiis ab minima atque doloremque quasi eaque incidunt. </p>
+                <span>HTML & CSS <br /> JavaScript <br /> REACT <br />Node-Js</span><br />
+                <Link to={"/questions"}><button className='btn btn-success mt-4'>Lets Start !</button></Link>
             </div>
         </Row>
     </div>

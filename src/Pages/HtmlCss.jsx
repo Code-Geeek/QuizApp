@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./QuesStyle.css";
+import whatsapp from '../Assets/WhatsApp_icon.png.webp'
+import fb from '../Assets/Facebook_Logo_2023.png'
+import { Link } from "react-router-dom";
 
 function HtmlCss() {
   // Properties
@@ -118,21 +121,27 @@ function HtmlCss() {
 
   return (
     <>
-      <div className="row" style={{height:'680px'}}>
+            <div className="row" style={{height:'680px'}}>
         <div className="col-lg-10 mt-5">
           <h1>HTML & CSS</h1>
 
           {showResults ? (
             <div className="final-results">
-              <h1>Final Results</h1>
-              <h2 className="mt-5">
-                <span className="text-success">{score}</span> out of   <span className="text-danger">{questions.length}</span> 
+              <h1 className="text-light">Your score is </h1>
+              <h2 className="mt-5 text-light">
+                {score} out of   {questions.length}
               </h2>
               <button className="btn btn-danger mt-5 mb-5" onClick={() => restartGame()}>RESTART</button>
+              <Link to={'/questions'}><button className="btn ms-3"><i class="fa-solid fa-arrow-right"></i></button></Link>
+              <h5 className="text-light">Share your Acheivement</h5>
+              <div>
+                <img style={{width:'25px'}} src={whatsapp} alt="" />
+                <img className="ms-3" style={{width:'20px'}} src={fb} alt="" />
+              </div>
             </div>
           ) : (
             <div className="question-card">
-              <h3 className="question-text">
+              <h3 className="question-text text-light mt-2">
                 {questions[currentQuestion].text}
               </h3>
 
@@ -148,14 +157,14 @@ function HtmlCss() {
                   );
                 })}
               </ul>
-              <h2>
+              <h5 className="text-light">
                 {currentQuestion + 1} / {questions.length}
-              </h2>
+              </h5>
             </div>
             
           )}
         </div>
-        <div className="col-lg-2 d-flex justify-content-center flec-column align-items-center bg-primary">
+        <div className="col-lg-2 d-flex justify-content-center flec-column align-items-center">
           {/* 2. Current Score  */}
           <h2 className="text-light">Score: {score}</h2>
         </div>
