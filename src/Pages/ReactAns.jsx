@@ -136,7 +136,7 @@ function ReactAns() {
               <Link to={'/questions'}><button className="btn ms-3"><i class="fa-solid fa-arrow-right"></i></button></Link>
               <h5 className="text-light">Share your Acheivement</h5>
               <div>
-              <a href="whatsapp://send?text=http://localhost:3000/"><img style={{width:'25px'}} src={wp} alt="" /></a>
+              <a href="whatsapp://send?text=Quiz.itExercise your brain with these basic quizzes.Play now:https://quiz-app-roan-tau.vercel.app/"><img style={{width:'25px'}} src={wp} alt="" /></a>
                 <img className="ms-3" style={{width:'20px'}} src={fb} alt="" />
               </div>
             </div>
